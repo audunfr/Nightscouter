@@ -31,7 +31,7 @@ open class AlarmAudioPlayer: AudioCordinator {
                 return
             }
             
-            if oldValue != alarmObject {
+           /* AF if oldValue != alarmObject {
                 do {
                     self.audioPlayer = try AVAudioPlayer(contentsOf: alarmObject.audioFileURL)
                     
@@ -47,7 +47,7 @@ open class AlarmAudioPlayer: AudioCordinator {
                 } catch {
                     return
                 }
-            }
+            } AF */
         }
     }
     
@@ -64,7 +64,7 @@ open class AlarmAudioPlayer: AudioCordinator {
     }
     
     public func play() {
-        unmuteVolume()
+       /* AF unmuteVolume()
         
         if !isPlaying && (alarmObject != nil) {
             do {
@@ -79,11 +79,11 @@ open class AlarmAudioPlayer: AudioCordinator {
                 print("Audio Error: \(error)")
                 print("Unable to play sound!")
             }
-        }
+        } AF */
     }
     
     public func pause() {
-        audioPlayer?.pause()
+        // AF audioPlayer?.pause()
     }
     
     public func stop() {
@@ -91,10 +91,10 @@ open class AlarmAudioPlayer: AudioCordinator {
     }
     
     public func unmuteVolume(){
-        audioPlayer?.volume = 1.0
+        // AF audioPlayer?.volume = 1.0
     }
     
     public func muteVolume() {
-        audioPlayer?.volume = 0
+        // AF audioPlayer?.volume = 0
     }
 }

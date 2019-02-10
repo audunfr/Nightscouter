@@ -157,6 +157,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             circularSmall.line2TextProvider = CLKSimpleTextProvider(text: PlaceHolderStrings.delta)
             
             template = circularSmall
+        case .graphicCorner:
+            return
+        case .graphicBezel:
+            return
+        case .graphicCircular:
+            return
+        case .graphicRectangular:
+            return
         }
         
         handler(template)
@@ -245,6 +253,14 @@ extension ComplicationController {
             
             template = circularSmall
             
+        case .graphicCorner:
+            break
+        case .graphicBezel:
+            break
+        case .graphicCircular:
+            break
+        case .graphicRectangular:
+            break
         }
         
         return template
